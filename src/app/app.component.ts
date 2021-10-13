@@ -7,4 +7,33 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'calculator-components';
+  userInput1 = "";
+  userInput2 = "";
+  operationChoice = "";
+
+  // userInput
+  receiveUserInput1($event :any){
+    this.userInput1 = $event;
+
+  }
+  receiveUserInput2($event :any){
+    this.userInput2 = $event;
+
+  }
+
+  // Operation
+  receiveAdd($event : any){
+    this.operationChoice = $event;
+  }
+  receiveSubtract($event : any){
+    this.operationChoice = $event;
+  }
+  receiveMultiply($event : any){
+    this.operationChoice = $event;
+  }
+  receiveDivide($event : any){
+    this.operationChoice = $event;
+  }
+
+
 }
